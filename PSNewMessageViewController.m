@@ -23,50 +23,45 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
     return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 -(IBAction)cancel:(id)sender{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(IBAction)parseSave:(id)sender{
+    
+    NSMutableArray *appDevMembers = [NSMutableArray arrayWithObjects:@"Patrick S.", @"Patrick T." @"Maijid", @"Lea", nil];
+    
+    if([self.messageText.text length] == 0 || [self.author.text length] == 0){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"You must enter text in both fields" delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+        [alert show];
+    }
+    else if(![appDevMembers containsObject:self.author.text]){
+        UIAlertView *userAlert = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"You must be in AppDev to create a new message" delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+        [userAlert show];
+    }
+    else{
     PFObject *message = [PFObject objectWithClassName:@"message"];
     [message setObject:self.messageText.text forKey:@"messageText"];
     [message setObject:self.author.text forKey:@"author"];
-    
     [message saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error){
             [self cancel:self];
         }
     }];
-    
+    }
 }
 
 @end

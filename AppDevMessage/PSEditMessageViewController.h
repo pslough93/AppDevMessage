@@ -11,9 +11,7 @@
 @interface PSEditMessageViewController : UIViewController
 
 @property (strong, nonatomic) id editItem;
-//@property (strong, nonatomic) NSString *messageText;
 
 @property (weak, nonatomic) IBOutlet UITextView *editMessageText;
-@property (weak, nonatomic) IBOutlet UITextField *editAuthorText;
 
 @end

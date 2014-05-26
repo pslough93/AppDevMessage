@@ -20,60 +20,44 @@
 - (void) configureView{
     if (self.editItem) {
         self.editMessageText.text = [self.editItem objectForKey:@"messageText"];
-        //NSString *author = [self.detailItem objectForKey:@"author"];
-        //NSString *senderText = [@"Sender: " stringByAppendingString:author];
-        self.editAuthorText.placeholder = [self.editItem objectForKey:@"author"];
-        NSLog(@"%@", [self.editItem objectId]);
     }
-
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
     return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     [self configureView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 -(IBAction)cancel:(id)sender{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(IBAction)parseUpdate:(id)sender{
+    if([self.editMessageText.text length] == 0){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"You must enter text in the field" delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+        [alert show];
+    }
+    else{
     PFQuery *query = [PFQuery queryWithClassName:@"message"];
     NSString *ID = [self.editItem objectId];
     [query getObjectInBackgroundWithId:ID block:^(PFObject *message, NSError *error) {
         message[@"messageText"] = self.editMessageText.text;
-        message[@"author"] = self.editAuthorText.text;
         [message saveInBackground];
     }];
     [self cancel:self];
+    }
 }
 
 @end
