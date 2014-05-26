@@ -1,5 +1,5 @@
 //
-//  PSMasterViewController.h
+//  NewMessageController.h
 //  AppDevMessage
 //
 //  Created by Patrick Slough on 5/25/14.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Parse/Parse.h>
 
-@interface PSMasterViewController : PFQueryTableViewController
+@interface NewMessageController : UIViewContrller
 
 @end

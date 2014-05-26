@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PSEditMessageViewController.h"
 
 @interface PSDetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UITextView *detailMessageText;
+@property (weak, nonatomic) IBOutlet UILabel *detailAuthorText;
+
 @end

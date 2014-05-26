@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0791BD1933A02A00FC245D /* PSEditMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0791BC1933A02A00FC245D /* PSEditMessageViewController.m */; };
 		CD6743BC19328AEB00BC8E19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743BB19328AEB00BC8E19 /* Foundation.framework */; };
 		CD6743BE19328AEB00BC8E19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743BD19328AEB00BC8E19 /* CoreGraphics.framework */; };
 		CD6743C019328AEB00BC8E19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743BF19328AEB00BC8E19 /* UIKit.framework */; };
@@ -22,6 +23,17 @@
 		CD6743E019328AEC00BC8E19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743BF19328AEB00BC8E19 /* UIKit.framework */; };
 		CD6743E819328AEC00BC8E19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD6743E619328AEC00BC8E19 /* InfoPlist.strings */; };
 		CD6743EA19328AEC00BC8E19 /* AppDevMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6743E919328AEC00BC8E19 /* AppDevMessageTests.m */; };
+		CD6743F419328B7200BC8E19 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743F319328B7200BC8E19 /* Parse.framework */; };
+		CD6743FE19328BF100BC8E19 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743F519328BF100BC8E19 /* AudioToolbox.framework */; };
+		CD6743FF19328BF100BC8E19 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743F619328BF100BC8E19 /* CFNetwork.framework */; };
+		CD67440019328BF100BC8E19 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743F719328BF100BC8E19 /* CoreLocation.framework */; };
+		CD67440119328BF100BC8E19 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743F819328BF100BC8E19 /* libz.dylib */; };
+		CD67440219328BF100BC8E19 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743F919328BF100BC8E19 /* MobileCoreServices.framework */; };
+		CD67440319328BF100BC8E19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743FA19328BF100BC8E19 /* QuartzCore.framework */; };
+		CD67440419328BF100BC8E19 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743FB19328BF100BC8E19 /* Security.framework */; };
+		CD67440519328BF100BC8E19 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743FC19328BF100BC8E19 /* StoreKit.framework */; };
+		CD67440619328BF100BC8E19 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6743FD19328BF100BC8E19 /* SystemConfiguration.framework */; };
+		CD67440C1932920C00BC8E19 /* PSNewMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67440B1932920C00BC8E19 /* PSNewMessageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD0791BB1933A02A00FC245D /* PSEditMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSEditMessageViewController.h; sourceTree = "<group>"; };
+		CD0791BC1933A02A00FC245D /* PSEditMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSEditMessageViewController.m; sourceTree = "<group>"; };
 		CD6743B819328AEB00BC8E19 /* AppDevMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDevMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6743BB19328AEB00BC8E19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD6743BD19328AEB00BC8E19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +70,18 @@
 		CD6743E519328AEC00BC8E19 /* AppDevMessageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppDevMessageTests-Info.plist"; sourceTree = "<group>"; };
 		CD6743E719328AEC00BC8E19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD6743E919328AEC00BC8E19 /* AppDevMessageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDevMessageTests.m; sourceTree = "<group>"; };
+		CD6743F319328B7200BC8E19 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		CD6743F519328BF100BC8E19 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CD6743F619328BF100BC8E19 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CD6743F719328BF100BC8E19 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CD6743F819328BF100BC8E19 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CD6743F919328BF100BC8E19 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CD6743FA19328BF100BC8E19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CD6743FB19328BF100BC8E19 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CD6743FC19328BF100BC8E19 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CD6743FD19328BF100BC8E19 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CD67440A1932920C00BC8E19 /* PSNewMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSNewMessageViewController.h; path = ../PSNewMessageViewController.h; sourceTree = "<group>"; };
+		CD67440B1932920C00BC8E19 /* PSNewMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSNewMessageViewController.m; path = ../PSNewMessageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +89,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6743FE19328BF100BC8E19 /* AudioToolbox.framework in Frameworks */,
+				CD6743FF19328BF100BC8E19 /* CFNetwork.framework in Frameworks */,
+				CD67440019328BF100BC8E19 /* CoreLocation.framework in Frameworks */,
+				CD67440119328BF100BC8E19 /* libz.dylib in Frameworks */,
+				CD67440219328BF100BC8E19 /* MobileCoreServices.framework in Frameworks */,
+				CD67440319328BF100BC8E19 /* QuartzCore.framework in Frameworks */,
+				CD67440419328BF100BC8E19 /* Security.framework in Frameworks */,
+				CD67440519328BF100BC8E19 /* StoreKit.framework in Frameworks */,
+				CD67440619328BF100BC8E19 /* SystemConfiguration.framework in Frameworks */,
 				CD6743BE19328AEB00BC8E19 /* CoreGraphics.framework in Frameworks */,
 				CD6743C019328AEB00BC8E19 /* UIKit.framework in Frameworks */,
+				CD6743F419328B7200BC8E19 /* Parse.framework in Frameworks */,
 				CD6743BC19328AEB00BC8E19 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +140,16 @@
 		CD6743BA19328AEB00BC8E19 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD6743F519328BF100BC8E19 /* AudioToolbox.framework */,
+				CD6743F619328BF100BC8E19 /* CFNetwork.framework */,
+				CD6743F719328BF100BC8E19 /* CoreLocation.framework */,
+				CD6743F819328BF100BC8E19 /* libz.dylib */,
+				CD6743F919328BF100BC8E19 /* MobileCoreServices.framework */,
+				CD6743FA19328BF100BC8E19 /* QuartzCore.framework */,
+				CD6743FB19328BF100BC8E19 /* Security.framework */,
+				CD6743FC19328BF100BC8E19 /* StoreKit.framework */,
+				CD6743FD19328BF100BC8E19 /* SystemConfiguration.framework */,
+				CD6743F319328B7200BC8E19 /* Parse.framework */,
 				CD6743BB19328AEB00BC8E19 /* Foundation.framework */,
 				CD6743BD19328AEB00BC8E19 /* CoreGraphics.framework */,
 				CD6743BF19328AEB00BC8E19 /* UIKit.framework */,
@@ -122,6 +168,10 @@
 				CD6743D119328AEB00BC8E19 /* PSMasterViewController.m */,
 				CD6743D319328AEB00BC8E19 /* PSDetailViewController.h */,
 				CD6743D419328AEB00BC8E19 /* PSDetailViewController.m */,
+				CD67440A1932920C00BC8E19 /* PSNewMessageViewController.h */,
+				CD67440B1932920C00BC8E19 /* PSNewMessageViewController.m */,
+				CD0791BB1933A02A00FC245D /* PSEditMessageViewController.h */,
+				CD0791BC1933A02A00FC245D /* PSEditMessageViewController.m */,
 				CD6743D619328AEB00BC8E19 /* Images.xcassets */,
 				CD6743C219328AEB00BC8E19 /* Supporting Files */,
 			);
@@ -256,8 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD6743D519328AEB00BC8E19 /* PSDetailViewController.m in Sources */,
+				CD0791BD1933A02A00FC245D /* PSEditMessageViewController.m in Sources */,
 				CD6743C819328AEB00BC8E19 /* main.m in Sources */,
 				CD6743CC19328AEB00BC8E19 /* PSAppDelegate.m in Sources */,
+				CD67440C1932920C00BC8E19 /* PSNewMessageViewController.m in Sources */,
 				CD6743D219328AEB00BC8E19 /* PSMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +435,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppDevMessage/AppDevMessage-Prefix.pch";
 				INFOPLIST_FILE = "AppDevMessage/AppDevMessage-Info.plist";
@@ -396,6 +452,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppDevMessage/AppDevMessage-Prefix.pch";
 				INFOPLIST_FILE = "AppDevMessage/AppDevMessage-Info.plist";
@@ -463,6 +523,7 @@
 				CD6743EF19328AEC00BC8E19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD6743F019328AEC00BC8E19 /* Build configuration list for PBXNativeTarget "AppDevMessageTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +532,7 @@
 				CD6743F219328AEC00BC8E19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

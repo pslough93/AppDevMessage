@@ -7,6 +7,7 @@
 //
 
 #import "PSDetailViewController.h"
+#import <Parse/Parse.h>
 
 @interface PSDetailViewController ()
 - (void)configureView;
@@ -31,7 +32,10 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.detailMessageText.text = [self.detailItem objectForKey:@"messageText"];
+        NSString *author = [self.detailItem objectForKey:@"author"];
+        NSString *senderText = [@"Sender: " stringByAppendingString:author];
+        self.detailAuthorText.text = senderText;
     }
 }
 
@@ -46,6 +50,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"ShowEdit"]) {
+        //PSEditMessageViewController *controller = (PSEditMessageViewController *)segue.destinationViewController;
+        //controller.messageText = [self.detailItem objectForKey:@"messageText"];
+        PFObject *object = self.detailItem;
+        [[segue destinationViewController] setEditItem:object];
+    };
 }
 
 @end
